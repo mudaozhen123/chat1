@@ -4,15 +4,16 @@
 }
 h1
 {
-text-align: center;
-background-attachment: #888;
-color: #fef;
+    text-align: center;
+    background-color: rgba(122, 12, 104, 0.993);
+    color: rgb(120, 185, 115);
+    font-size:5vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 input,
 button
 {
-    border:1px solid #ccc;
+    border:1px solid rgb(226, 18, 98);
     font-size:5vw;
     line-height:7vw;
     height:10vw;
@@ -22,12 +23,59 @@ button
 input
 {
     border-radius:5vw 0 0 5vw;
+    background-color: rgb(28, 221, 21);
 }
 button
 {
     border-radius:0 5vw 5vw 0;
+    background-color: rgb(34, 31, 180);
 }
 #chats
 {
     font-size:5vw;
+}
+#chats dt
+{
+    margin: 2vw 0;
+    border:1px solid rgb(71, 85, 80);
+    background-color: rgb(124, 18, 156);
+    border-radius:3vw;
+    padding:1vw 3vw;
+    display: inline-block;
+}
+#chats dt+dd
+{
+    margin-left: 8vw;
+    position: relative;
+    background-color:rgb(117, 12, 91);
+    border-radius:3vw;
+    padding:1vw 3vw;
+}
+#chats dd+dd
+{
+    margin-left: 10vw;
+    font-size:2.5vw;
+}
+
+#chats dt+dd::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -6vw;
+    margin-top: -7vw;
+    border: 3vw solid transparent;
+    border-right: 8vw solid rgb(13, 163, 250);
+    transform: rotate(40deg);
+    z-index: -1;
+}
+
+#form
+{
+    display:none;
+}
+form
+{
+    text-align:center;
 }
